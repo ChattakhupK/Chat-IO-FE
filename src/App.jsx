@@ -3,9 +3,7 @@ import { io } from "socket.io-client";
 import { Dot, User } from "lucide-react";
 import dayjs from "dayjs";
 
-const socket = io(import.meta.env.VITE_URL_IO, {
-  path: "/api/socketio",
-}); // เชื่อมหลังบ้าน
+const socket = io(import.meta.env.VITE_URL_IO); // เชื่อมหลังบ้าน
 
 function App() {
   const [message, setMessage] = useState("");
